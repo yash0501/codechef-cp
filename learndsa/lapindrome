@@ -1,0 +1,277 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+	//code
+	int i,j,k,m,n,t,x,y,z;
+	char a[1000], b[26], c[26],p,r,q;
+	scanf("%d",&t);
+	for(i=0;i<t;i++){
+	    scanf("%s",a);
+	    for(j=0;j<26;j++){
+	        b[j]=0;
+	        c[j]=0;
+	    }
+	    x=strlen(a);
+	    if(x%2==0){
+	        m=x/2;
+	        for(j=0;j<m;j++){
+	            p=a[j];
+	            q=a[m+j];
+	            switch(p){
+	                case 'a': b[0]++;
+	                    break;
+	                case 'b': b[1]++;
+	                    break;
+	                case 'c': b[2]++;
+	                    break;
+	                case 'd': b[3]++;
+	                    break;
+	                case 'e': b[4]++;
+	                    break;
+	                case 'f': b[5]++;
+	                    break;
+	                case 'g': b[6]++;
+	                    break;
+	                case 'h': b[7]++;
+	                    break;
+	                case 'i': b[8]++;
+	                    break;
+	                case 'j': b[9]++;
+	                    break;
+	                case 'k': b[10]++;
+	                    break;
+	                case 'l': b[11]++;
+	                    break;
+	                case 'm': b[12]++;
+	                    break;
+	                case 'n': b[13]++;
+	                    break;
+	                case 'o': b[14]++;
+	                    break;
+	                case 'p': b[15]++;
+	                    break;
+	                case 'q': b[16]++;
+	                    break;
+	                case 'r': b[17]++;
+	                    break;
+	                case 's': b[18]++;
+	                    break;
+	                case 't': b[19]++;
+	                    break;
+	                case 'u': b[20]++;
+	                    break;
+	                case 'v': b[21]++;
+	                    break;
+	                case 'w': b[22]++;
+	                    break;
+	                case 'x': b[23]++;
+	                    break;
+	                case 'y': b[24]++;
+	                    break;
+	                case 'z': b[25]++;
+	                    break;
+	                
+	            }
+	            
+	            switch(q){
+	                case 'a': c[0]++;
+	                    break;
+	                case 'b': c[1]++;
+	                    break;
+	                case 'c': c[2]++;
+	                    break;
+	                case 'd': c[3]++;
+	                    break;
+	                case 'e': c[4]++;
+	                    break;
+	                case 'f': c[5]++;
+	                    break;
+	                case 'g': c[6]++;
+	                    break;
+	                case 'h': c[7]++;
+	                    break;
+	                case 'i': c[8]++;
+	                    break;
+	                case 'j': c[9]++;
+	                    break;
+	                case 'k': c[10]++;
+	                    break;
+	                case 'l': c[11]++;
+	                    break;
+	                case 'm': c[12]++;
+	                    break;
+	                case 'n': c[13]++;
+	                    break;
+	                case 'o': c[14]++;
+	                    break;
+	                case 'p': c[15]++;
+	                    break;
+	                case 'q': c[16]++;
+	                    break;
+	                case 'r': c[17]++;
+	                    break;
+	                case 's': c[18]++;
+	                    break;
+	                case 't': c[19]++;
+	                    break;
+	                case 'u': c[20]++;
+	                    break;
+	                case 'v': c[21]++;
+	                    break;
+	                case 'w': c[22]++;
+	                    break;
+	                case 'x': c[23]++;
+	                    break;
+	                case 'y': c[24]++;
+	                    break;
+	                case 'z': c[25]++;
+	                    break;
+	                
+	            }
+	        }
+	        int temp = 0;
+	        for(j=0;j<26;j++){
+	            if(b[j]==c[j]){
+	                temp++;
+	            }
+	        }
+	        if(temp == 26){
+	            printf("YES\n");
+	        }
+	        else{
+	            printf("NO\n");
+	        }
+	    }
+	    else{
+	        m=x/2;
+	        for(j=0;j<m;j++){
+	            p=a[j];
+	            q=a[m+j+1];
+	            switch(p){
+	                case 'a': b[0]++;
+	                    break;
+	                case 'b': b[1]++;
+	                    break;
+	                case 'c': b[2]++;
+	                    break;
+	                case 'd': b[3]++;
+	                    break;
+	                case 'e': b[4]++;
+	                    break;
+	                case 'f': b[5]++;
+	                    break;
+	                case 'g': b[6]++;
+	                    break;
+	                case 'h': b[7]++;
+	                    break;
+	                case 'i': b[8]++;
+	                    break;
+	                case 'j': b[9]++;
+	                    break;
+	                case 'k': b[10]++;
+	                    break;
+	                case 'l': b[11]++;
+	                    break;
+	                case 'm': b[12]++;
+	                    break;
+	                case 'n': b[13]++;
+	                    break;
+	                case 'o': b[14]++;
+	                    break;
+	                case 'p': b[15]++;
+	                    break;
+	                case 'q': b[16]++;
+	                    break;
+	                case 'r': b[17]++;
+	                    break;
+	                case 's': b[18]++;
+	                    break;
+	                case 't': b[19]++;
+	                    break;
+	                case 'u': b[20]++;
+	                    break;
+	                case 'v': b[21]++;
+	                    break;
+	                case 'w': b[22]++;
+	                    break;
+	                case 'x': b[23]++;
+	                    break;
+	                case 'y': b[24]++;
+	                    break;
+	                case 'z': b[25]++;
+	                    break;
+	                
+	            }
+	            
+	            switch(q){
+	                case 'a': c[0]++;
+	                    break;
+	                case 'b': c[1]++;
+	                    break;
+	                case 'c': c[2]++;
+	                    break;
+	                case 'd': c[3]++;
+	                    break;
+	                case 'e': c[4]++;
+	                    break;
+	                case 'f': c[5]++;
+	                    break;
+	                case 'g': c[6]++;
+	                    break;
+	                case 'h': c[7]++;
+	                    break;
+	                case 'i': c[8]++;
+	                    break;
+	                case 'j': c[9]++;
+	                    break;
+	                case 'k': c[10]++;
+	                    break;
+	                case 'l': c[11]++;
+	                    break;
+	                case 'm': c[12]++;
+	                    break;
+	                case 'n': c[13]++;
+	                    break;
+	                case 'o': c[14]++;
+	                    break;
+	                case 'p': c[15]++;
+	                    break;
+	                case 'q': c[16]++;
+	                    break;
+	                case 'r': c[17]++;
+	                    break;
+	                case 's': c[18]++;
+	                    break;
+	                case 't': c[19]++;
+	                    break;
+	                case 'u': c[20]++;
+	                    break;
+	                case 'v': c[21]++;
+	                    break;
+	                case 'w': c[22]++;
+	                    break;
+	                case 'x': c[23]++;
+	                    break;
+	                case 'y': c[24]++;
+	                    break;
+	                case 'z': c[25]++;
+	                    break;
+	                
+	            }
+	        }
+	        int temp = 0;
+	        for(j=0;j<26;j++){
+	            if(b[j]==c[j]){
+	                temp++;
+	            }
+	        }
+	        if(temp == 26){
+	            printf("YES\n");
+	        }
+	        else{
+	            printf("NO\n");
+	        }
+	    }
+	}
+	return 0;
+}
